@@ -1,0 +1,81 @@
+@media (max-width: 1230px){
+    .nav__list{
+        display: none;
+    }
+    .nav__button{
+        display: block;
+    }
+    .nav.open .nav__list{
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .nav__link{
+        color: #828282;
+    }
+    .nav__link.active{
+        color: #000;
+    }
+    .nav__button{
+        position: fixed;
+        z-index: 9;
+        top: 46px;
+        right: 30px;
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        
+
+    }
+
+    .header__row{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .header__content{
+        margin-top: 0;
+    }
+    .header__nav{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 700px){
+    .header__heading{
+        font-size: 34px;
+    }
+    .header__heading span{
+        font-size: 28px;
+    }
+    .services__row{
+        display: flex;
+        flex-direction: column;
+    }
+    .service__cad h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .service__cad p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .project a{
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .service__card + .service__card{
+    margin-top: 60px;
+    
+}
+}
